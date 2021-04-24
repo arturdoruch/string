@@ -1,0 +1,18 @@
+{
+    "name": "arturdoruch/string",
+    "description": "String utilities.",
+    "authors": [
+        {
+            "name": "Artur Doruch",
+            "email": "arturdoruch@interia.pl"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ArturDoruch\\String\\": ""
+        }
+    }
+}
