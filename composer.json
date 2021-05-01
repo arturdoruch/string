@@ -1,6 +1,7 @@
 {
     "name": "arturdoruch/string",
     "description": "String utilities.",
+    "license": "MIT",
     "authors": [
         {
             "name": "Artur Doruch",
