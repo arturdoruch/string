@@ -79,7 +79,7 @@ class StringCaseConverter
      */
     public static function toTitle(string $string, bool $uppercaseFirstLetters = false): string
     {
-        return preg_replace_callback('/((^|\.? )[\p{Ll}])/u', function ($matches) use (&$uppercaseFirstLetters) {
+        return preg_replace_callback('/((^|\.? )[\p{Ll}])/u', static function ($matches) use (&$uppercaseFirstLetters) {
             return $matches[1][0] !== ' ' || $uppercaseFirstLetters ? mb_strtoupper($matches[1]) : $matches[1];
         }, trim(str_replace(['_', '-'], ' ', $string)));
     }

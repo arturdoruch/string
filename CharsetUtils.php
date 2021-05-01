@@ -3,6 +3,8 @@
 namespace ArturDoruch\String;
 
 /**
+ * Character sets utilities.
+ *
  * @author Artur Doruch <arturdoruch@interia.pl>
  */
 class CharsetUtils
@@ -16,8 +18,7 @@ class CharsetUtils
      */
     public static function isUtf8(string $string): bool
     {
-        return preg_match('//u', $string);
-        //return (bool) mb_detect_encoding($string, 'UTF-8', true/*, $strict Whether to use the strict encoding detection*/);
+        return preg_match('//u', $string); //(bool) mb_detect_encoding($string, 'UTF-8', $strict = true);
     }
 
     /**
