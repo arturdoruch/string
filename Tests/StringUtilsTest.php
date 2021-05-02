@@ -1,8 +1,8 @@
 <?php
 
-namespace ArturDoruch\String\Types;
+namespace ArturDoruch\StringUtil\Tests;
 
-use ArturDoruch\String\StringUtils;
+use ArturDoruch\StringUtil\StringUtils;
 use PHPUnit\Framework\TestCase;
 
 /**

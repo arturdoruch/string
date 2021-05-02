@@ -1,8 +1,8 @@
 <?php
 
-namespace ArturDoruch\String\Types;
+namespace ArturDoruch\StringUtil\Tests;
 
-use ArturDoruch\String\CharsetUtils;
+use ArturDoruch\StringUtil\CharsetUtils;
 use PHPUnit\Framework\TestCase;
 
 /**

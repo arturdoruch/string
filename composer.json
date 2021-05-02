@@ -1,6 +1,7 @@
 {
-    "name": "arturdoruch/string",
+    "name": "arturdoruch/string-util",
     "description": "String utilities.",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
@@ -13,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ArturDoruch\\String\\": ""
+            "ArturDoruch\\StringUtil\\": ""
         }
     }
 }

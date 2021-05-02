@@ -1,8 +1,8 @@
 <?php
 
-namespace ArturDoruch\String\Types;
+namespace ArturDoruch\StringUtil\Tests;
 
-use ArturDoruch\String\StringCaseConverter;
+use ArturDoruch\StringUtil\StringCaseConverter;
 use PHPUnit\Framework\TestCase;
 
 /**

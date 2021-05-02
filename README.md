@@ -1,11 +1,11 @@
-# String
+# StringUtil
 
 String utilities.
 
 ## Installation
 
 ```
-composer require arturdoruch/string
+composer require arturdoruch/string-util
 ```
 
 ## Contents

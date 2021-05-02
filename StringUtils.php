@@ -1,6 +1,6 @@
 <?php
 
-namespace ArturDoruch\String;
+namespace ArturDoruch\StringUtil;
 
 /**
  * @author Artur Doruch <arturdoruch@interia.pl>
