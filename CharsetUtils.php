@@ -64,7 +64,9 @@ class CharsetUtils
 
     public static function decodeNonBreakingSpaces($string): string
     {
-        return preg_replace('/&nbsp;|\x{00A0}/u', ' ', $string);
+        $string = str_replace('&nbsp;', ' ', $string);
+
+        return preg_replace('/\x{00A0}/u', ' ', $string);
     }
 
     /**
