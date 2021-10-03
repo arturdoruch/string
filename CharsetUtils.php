@@ -61,12 +61,20 @@ class CharsetUtils
         }, $string);
     }
 
-
+    /**
+     * @param string $string
+     *
+     * @return string
+     */
     public static function decodeNonBreakingSpaces($string): string
     {
         $string = str_replace('&nbsp;', ' ', $string);
 
-        return preg_replace('/\x{00A0}/u', ' ', $string);
+        if (null === $str = preg_replace('/\x{00A0}/u', ' ', $string)) {
+            return $string;
+        }
+
+        return $str;
     }
 
     /**

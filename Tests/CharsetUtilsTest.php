@@ -70,7 +70,9 @@ class CharsetUtilsTest extends TestCase
 
     public function testDecodeNonBreakingSpaces()
     {
+        self::assertEquals('', CharsetUtils::decodeNonBreakingSpaces(null));
         self::assertEquals('A  B  ', CharsetUtils::decodeNonBreakingSpaces("A\u{00A0}\u{00A0}B&nbsp;&nbsp;"));
+        self::assertEquals('�abc', CharsetUtils::decodeNonBreakingSpaces('�abc'));
     }
 
 
